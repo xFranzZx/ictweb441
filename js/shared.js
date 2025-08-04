@@ -37,19 +37,17 @@ function showHeadline() {
 
   // Fade out
   el.classList.add('fade-out');
-
   setTimeout(() => {
     const item = headlines[index];
     el.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
 
     // Fade in
     el.classList.remove('fade-out');
-    el.classList.add('fade-in');
+    // el.classList.add('fade-in');
 
-    setTimeout(() => {
-      el.classList.remove('fade-in');
-    }, 1000);
-
+    // setTimeout(() => {
+    //   el.classList.remove('fade-in');
+    // }, 1000);
     index = (index + 1) % headlines.length;
   }, 1000);
 }
