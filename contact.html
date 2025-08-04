@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Corey Franz">
+<!-- This script detects if the current theme of the device is utilising a dark mode, and will automatically apply darkmode-->
+    <script> (function() {
+    const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark-mode');
+        }
+    })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/shared.js" defer></script>
+    <title>The Shipyard</title>
+</head>
+<body class="bgcontact">
+    <header>
+        <h1>The Shipyard</h1>
+        <h2>THE DEFINITIVE SHIP SALES MERCHANT</h2>
+        <div id="galnet-container">
+            <p id="galnet-title">Loading GalNet News...</p>
+        </div>
+    </header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Our Showroom</a></li>
+        <div class="dropdown">
+        <li><a class="dropbtn">Federal Corvette</a></li>
+            <div class="dropdown-content">
+            <a href="fedcorvette/fedcorvette.html">Ship Details</a>
+            <a href="./fedcorvette/images.html">Gallery</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <li><a class="dropbtn">Mandalay</a></li>
+            <div class="dropdown-content">
+            <a href="mandalay/mandalay.html">Ship Details</a>
+            <a href="mandalay/images.html">Gallery</a>
+            </div>
+        </div>
+        <li><a class="active" href="#contact.html">Contact</a></li>
+        <li><a id="theme-toggle">Dark Mode</a></li>
+      </ul>
+    <div class="container">
+      <p class="credits">Photo by Stefans02@Flickr</p>
+      <form action="mailto:someone@somewhere.com" method="post" enctype="text/plain">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" placeholder="your name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" placeholder="youremail@email.com">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" placeholder="indulge yourself in the conversing of words" style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+<footer>
+    <p class="footerp">Copyright Corey Franz 2024.</p>
+    <p class="footerp">Screenshots were taken in game by myself, Corey Franz under Cmdr Adeleine Myslyvystya in the service of YuriGrom. All art assests, symbols, logos and models are property of Frontier Developments plc.</p>
+    <p class="footerp">Images are used under Fair Use under the Copyright Act 1968 Section 40.</p>
+    <p class="footerp">Corey Franz and the webpage "The Shipyard" has no affiliation with Frontier Developments plc.</p>
+    <p class="footerp">This webpage is purely for educational purposes, any commerical distribution is strictly forbidden.</p>
+    <p class="verysmallp">This has in fact, not been found to be 100% YuriGrom propaganda</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Corey Franz">
+<!-- This script detects if the current theme of the device is utilising a dark mode, and will automatically apply darkmode-->
+    <script> (function() {
+    const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark-mode');
+        }
+    })();
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/shared.js" defer></script>
+    <title>The Shipyard</title>
+</head>
+<body class="bgindex">
+    <header>
+        <h1>The Shipyard</h1>
+        <h2>THE DEFINITIVE SHIP SALES MERCHANT</h2>
+        <div id="galnet-container">
+            <p id="galnet-title">Loading GalNet News...</p>
+        </div>
+    </header>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../products.html">Our Showroom</a></li>
+        <div class="dropdown">
+            <li><a class="dropbtn">Federal Corvette</a></li>
+            <div class="dropdown-content">
+            <a href="#fedcorvette.html">Ship Details</a>
+            <a href="images.html">Gallery</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <li><a class="dropbtn">Mandalay</a></li>
+            <div class="dropdown-content">
+            <a href="../mandalay/mandalay.html">Ship Details</a>
+            <a href="../mandalay/images.html">Gallery</a>
+            </div>
+        </div>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a id="theme-toggle">Dark Mode</a></li>
+    </ul>
+    <div class="divad">
+    <p class="pfunky pinbox"><strong>PROUDLY</strong> engineered by <strong>CORE DYNAMICS</strong>, bringing military hardware that <strong>YOU</strong> can get your hands on. 
+    Without a shadow of a doubt, <strong>YOU</strong> can leave your enemies to face <strong>THE VACUUM OF SPACE</strong>, as you dismantle their ship in <strong>MERE SECONDS</strong> 
+    with the inclusion of not one, but <strong>TWO HUGE HARDPOINTS</strong>, placed behind the cockpit, so <strong>YOU</strong> can feel the <strong>SUPERIORITY</strong> and the 
+    <strong>POWER</strong> of your desired armament sending a message of <strong>PURE DESTRUCTION</strong> to those who have decided this is <strong>THEIR FATE</strong>.</p>
+    <p class="pfunky pinbox">- some Core Dynamics Engineer</p>
+    <p class="pfunky slightsmallp pinbox">*Please note that this may or may not reflect the interests of The Federation</p>
+    <p class="pfunky smallp pinbox">JOIN THE FEDERATION TODAY!</p>
+    </div>
+
+    <footer>
+    <p class="footerp">Copyright Corey Franz 2024.</p>
+    <p class="footerp">Screenshots were taken in game by myself, Corey Franz under Cmdr Adeleine Myslyvystya in the service of YuriGrom. All art assests, symbols, logos and models are property of Frontier Developments plc.</p>
+    <p class="footerp">Images are used under Fair Use under the Copyright Act 1968 Section 40.</p>
+    <p class="footerp">Corey Franz and the webpage "The Shipyard" has no affiliation with Frontier Developments plc.</p>
+    <p class="footerp">This webpage is purely for educational purposes, any commerical distribution is strictly forbidden.</p>
+    <p class="verysmallp">This has in fact, not been found to be 100% YuriGrom propaganda c:</p>
+    </footer>
+</body>
+</html>

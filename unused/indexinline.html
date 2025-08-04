@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+  body {
+  font-family: Verdana, Helvetica, system-ui, sans-serif;
+  background-color:#f2f2f2;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  }
+
+.credits {
+  margin-right: 10px;
+  font-size: 6px;
+  text-align: right;
+  color: #ffffff
+}
+
+header {
+  margin: 0 auto;
+  background-color: #161733;
+  width: 100%;
+  padding: 1%;
+}
+
+h1 {
+  font-family: 'Teko';
+  color: #ffffff;
+  font-size: 100px;
+  padding: 25px;
+  margin: 10px;
+}
+
+h2 {
+  font-family: Verdana;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.h2intex {
+  font-family: 'Teko';
+  color: #ffffff;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #161733, 1px -1px 0 #161733, -1px 1px 0 #161733, 1px 1px 0 #161733;
+}
+
+.intex {
+  font-family: Verdana;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  text-shadow: -1px -1px 0 #161733, 1px -1px 0 #161733, -1px 1px 0 #161733, 1px 1px 0 #161733;
+}
+
+.pinbox {
+  color: #000000;
+}
+
+img {
+  width: 49%;
+  height: auto;
+  
+}
+
+.imgcentre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  width: 49%;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.pfunky {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.divad {
+  background-color: #ffffff;
+  width: auto;
+  border: 1px solid #a12323;
+  padding: 8px;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 20px;
+}
+  
+li {
+  float: left;
+}
+          
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+          
+li a:hover:not(.active) {
+  background-color: #161733;
+}
+          
+.active {
+  background-color: #0c3a76;
+}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a12323;
+    resize: vertical;
+}
+
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a12323;
+    resize: vertical;
+}
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #161733, 1px -1px 0 #161733, -1px 1px 0 #161733, 1px 1px 0 #161733;
+}
+  
+  input[type=submit] {
+    background-color: #0c3a76;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    /*float: right;*/
+}
+  
+  input[type=submit]:hover {
+    background-color: #161733;
+}
+  
+.container {
+  background-color: #f2f2f250;
+  padding: 40px;
+  background-size: auto;
+  width: 97%;
+  margin: 2%;
+  border-radius: 3px;
+}
+  
+  .col-25 {
+    /*float: left;*/
+    width: 25%;
+    margin-top: 6px;
+}
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+  footer {
+    background-color: #161733;
+    margin-top: auto;
+}
+  
+  .slightsmallp {
+    font-size: 10px;
+}
+
+  .smallp {
+    margin-right: 10px;
+    font-size: 6px;
+    text-align: right;
+}
+
+  .verysmallp {
+  margin-right: 10px;
+  font-size: 6px;
+  text-align: right;
+  color: #ffffff;
+}
+
+  .footerp {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.bgcontact {
+  background-image: url(media/stationmilkyway.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bgindex {
+  background-image: url(media/indeximage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Corey Franz">
+    <title>The Shipyard</title>
+</head>
+<body class="bgindex">
+    <header>
+        <h1>The Shipyard</h1>
+        <h2>The definitive ship sales merchant</h2>
+    </header>
+
+
+    <ul>
+        <li><a class="active" href="#index">Home</a></li>
+        <li><a href="products.html">Federal Corvette</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="container">
+        <p class="credits">Photo by Stefans02@Flickr</p>
+        <h2 class="h2intex">Welcome!</h2>
+        <p class="intex">This is a simple homepage for The Shipyard.
+        The Shipyard is designed to present the spacecraft in an attractive way that one may consider buying a ship that is essentially displayed here,
+        and to just have some fun with web design elements! (but lets be honest, you only want the Federal Corvette anyway)
+        Currently, the only ship present is the Federal Corvette, but we're looking to expand sometime never</p>
+    </div>
+
+
+    <footer>
+    <p class="footerp">Copyright Corey Franz 2024.</p>
+    <p class="footerp">Screenshots were taken in game by myself, Corey Franz under Cmdr Adeleine Myslyvystya in the service of YuriGrom. All art assests, symbols, logos and models are property of Frontier Developments plc.</p>
+    <p class="footerp">Images are used under Fair Use under the Copyright Act 1968 Section 40.</p>
+    <p class="footerp">Corey Franz and the webpage "The Shipyard" has no affiliation with Frontier Developments plc.</p>
+    <p class="footerp">This webpage is purely for educational purposes, any commerical distribution is strictly forbidden.</p>
+    <p class="verysmallp">This has in fact, not been found to be 100% YuriGrom propaganda c:</p>
+    </footer>
+</body>
+</html>
+
+
