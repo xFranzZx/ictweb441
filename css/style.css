@@ -76,7 +76,7 @@ header {
 /*End GalNet Feed*/
 
 /*GalNet Feed Transition Debug*/
-#galnet-title.fade-in::after {
+/* #galnet-title.fade-in::after {
   content: "<-- fade in applied";
   color: lime;
   font-size: 0.8em;
@@ -86,7 +86,7 @@ header {
   content: "--> fade-out applied";
   color: red;
   font-size: 0.8rem;
-}
+} */
 /*End GalNet Feed Transition Debug*/
 
 @media (max-width: 768px) {
