@@ -34,20 +34,13 @@ fetch(proxyUrl)
 
 function showHeadline() {
   const el = document.getElementById('galnet-title');
-
-  // Fade out
   el.classList.add('fade-out');
+
   setTimeout(() => {
     const item = headlines[index];
     el.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
 
-    // Fade in
     el.classList.remove('fade-out');
-    // el.classList.add('fade-in');
-
-    // setTimeout(() => {
-    //   el.classList.remove('fade-in');
-    // }, 1000);
     index = (index + 1) % headlines.length;
   }, 1000);
 }
@@ -127,7 +120,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Dark Mode
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+}
 document.addEventListener("DOMContentLoaded", () => {
+  applySavedTheme();
   const toggleBtn = document.getElementById("theme-toggle");
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
@@ -138,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-  const savedTheme = localStorage.getItem("theme")
-  if(localStorage.getItem('theme') == 'dark')
-     {document.body.classList.add('dark-mode');
-}
+//   const savedTheme = localStorage.getItem("theme")
+//   if(localStorage.getItem('theme') == 'dark')
+//      {document.body.classList.add('dark-mode');
+// }
