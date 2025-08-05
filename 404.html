@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Corey Franz">
-<!-- This script detects if the current theme of the device is utilising a dark mode, and will automatically apply darkmode-->
-    <script> (function() {
-    const theme = localStorage.getItem('theme');
-        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark-mode');
-        }
-    })();
-    </script>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/shared.js" defer></script>
     <title>404 - Page Not Found</title>
@@ -41,7 +33,7 @@
             <a href="../mandalay/images.html">Gallery</a>
             </div>
         </div>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="../contact.html">Contact</a></li>
         <li><a id="theme-toggle">Dark Mode</a></li>
     </ul>
 <div class="error-container">

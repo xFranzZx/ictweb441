@@ -61,33 +61,10 @@ header {
   text-decoration: underline;
 }
 
-#galnet-title {
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-}
-
-.fade-out {
-  opacity: 0;
-}
-
-/* .fade-in {
+/* #galnet-title {
+  transition: 1s ease-in-out;
   opacity: 1;
 } */
-/*End GalNet Feed*/
-
-/*GalNet Feed Transition Debug*/
-/* #galnet-title.fade-in::after {
-  content: "<-- fade in applied";
-  color: lime;
-  font-size: 0.8em;
-}
-
-#galnet-title.fade-out::after {
-  content: "--> fade-out applied";
-  color: red;
-  font-size: 0.8rem;
-} */
-/*End GalNet Feed Transition Debug*/
 
 @media (max-width: 768px) {
   #galnet-container {
@@ -121,7 +98,6 @@ h2 {
 }
 
 .intex {
-  /*font-family: Tahoma;*/
   color: #ffffff;
   font-size: 30px;
   text-align: center;
@@ -512,15 +488,16 @@ input[type=email], select, textarea {
 }
 
 .dark-mode h2 {
-  color: #f2f2f2;
+  color: #bb86fc;
 }
 
 .dark-mode .h2intex {
-  color: #f2f2f2;
+  color: #bb86fc;
 }
 
 .dark-mode .intex {
-  color: #f2f2f2;
+  color: #bb86fc;
+  text-shadow: none;
 }
 
 .dark-mode .dropdown-content {

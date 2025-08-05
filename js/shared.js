@@ -34,13 +34,13 @@ fetch(proxyUrl)
 
 function showHeadline() {
   const el = document.getElementById('galnet-title');
-  el.classList.add('fade-out');
+  // el.classList.add('fade-out');
 
   setTimeout(() => {
     const item = headlines[index];
     el.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
 
-    el.classList.remove('fade-out');
+    // el.classList.remove('fade-out');
     index = (index + 1) % headlines.length;
   }, 1000);
 }
