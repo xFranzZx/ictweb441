@@ -103,19 +103,23 @@ document.addEventListener("DOMContentLoaded", () => {
       lightbox.classList.add("hidden");
       lightboxImg.src = "";
     });
-}
+  }
 
   // Navigate to the previous image with "<" button
-  prevBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    showImage(currentIndex - 1);
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      showImage(currentIndex - 1);
+    });
+  }
 
   // Navigate to the next image with ">" button
-  nextBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    showImage(currentIndex + 1);
-  });
+  if (nextBtn) {
+    nextBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      showImage(currentIndex + 1);
+    });
+  }
 
   // Support for using ESC to close the lightbox and arrow keys to navigate the images
   document.addEventListener("keydown", (e) => {
