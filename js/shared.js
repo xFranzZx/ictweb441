@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Lightbox Gallery Functionality
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".gallery img");
+
+  if (!document.querySelector(".gallery")) return;
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const closeBtn = document.querySelector(".close-btn");
