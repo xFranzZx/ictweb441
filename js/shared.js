@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.querySelector(".lightbox-arrow.right");
 
   let currentIndex = 0;
+
   // Show the image at the given index, wrapping around if needed
   function showImage(index) {
     currentIndex = (index + images.length) % images.length; // Wrap around
@@ -97,10 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Close lightbox on clicking close "X" button
-  closeBtn.addEventListener("click", () => {
-    lightbox.classList.add("hidden");
-    lightboxImg.src = "";
-  });
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      lightbox.classList.add("hidden");
+      lightboxImg.src = "";
+    });
+}
 
   // Navigate to the previous image with "<" button
   prevBtn.addEventListener("click", (e) => {
